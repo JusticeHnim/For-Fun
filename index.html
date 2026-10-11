@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đếm Chuỗi - Thời Gian Thực</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🔥 Đếm Chuỗi Của Tôi</h1>
+
+        <!-- Bàn phím Emoji -->
+        <div class="emoji-keyboard" id="emojiKeyboard">
+            <span onclick="addEmoji('📚')">📚</span>
+            <span onclick="addEmoji('🏃‍♂️')">🏃‍♂️</span>
+            <span onclick="addEmoji('💧')">💧</span>
+            <span onclick="addEmoji('💻')">💻</span>
+            <span onclick="addEmoji('🍎')">🍎</span>
+            <span onclick="addEmoji('🎸')">🎸</span>
+            <span onclick="addEmoji('🧹')">🧹</span>
+            <span onclick="addEmoji('🔥')">🔥</span>
+        </div>
+
+        <!-- Khu vực thêm nhiệm vụ mới -->
+        <div class="task-setup">
+            <input type="text" id="newTaskInput" placeholder="Ví dụ: Đọc sách...">
+            <button onclick="addTask()">+ Thêm</button>
+        </div>
+
+        <!-- Vùng chứa danh sách -->
+        <div id="taskList" class="task-list"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
